@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JourneyJoy.DAL\JourneyJoy.DAL.csproj" />
+    <ProjectReference Include="..\JourneyJoy.DTO\JourneyJoy.DTO.csproj" />
+  </ItemGroup>
+
 </Project>

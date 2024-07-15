@@ -1,6 +1,12 @@
+using JourneyJoy.API.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var configuration = builder.Configuration;
+var host = builder.Host;
+
 // Add services to the container.
+builder.Services.ConfigureMyServices(configuration, host);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
