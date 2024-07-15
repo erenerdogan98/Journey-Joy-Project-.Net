@@ -1,0 +1,6 @@
+@JourneyJoy.API_HostAddress = http://localhost:5204
+
+GET {{JourneyJoy.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
