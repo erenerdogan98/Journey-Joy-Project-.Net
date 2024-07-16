@@ -5,15 +5,17 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{9BE9D422-B48E-4373-82E7-95C79289CE8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyJoy.BLL", "Backend\JourneyJoy.BLL\JourneyJoy.BLL.csproj", "{5C1CE317-0E18-4650-A355-C2FC34B17AC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JourneyJoy.BLL", "Backend\JourneyJoy.BLL\JourneyJoy.BLL.csproj", "{5C1CE317-0E18-4650-A355-C2FC34B17AC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyJoy.DAL", "Backend\JourneyJoy.DAL\JourneyJoy.DAL.csproj", "{497A9046-B287-44B8-8DB8-477E0DA74C6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JourneyJoy.DAL", "Backend\JourneyJoy.DAL\JourneyJoy.DAL.csproj", "{497A9046-B287-44B8-8DB8-477E0DA74C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyJoy.Entities", "Backend\JourneyJoy.Entities\JourneyJoy.Entities.csproj", "{33DD975E-CBC4-4E95-B5CD-F87A10A46820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JourneyJoy.Entities", "Backend\JourneyJoy.Entities\JourneyJoy.Entities.csproj", "{33DD975E-CBC4-4E95-B5CD-F87A10A46820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyJoy.DTO", "Backend\JourneyJoy.DTO\JourneyJoy.DTO.csproj", "{E98D8712-E4A6-464D-9E03-9B06F83109EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JourneyJoy.DTO", "Backend\JourneyJoy.DTO\JourneyJoy.DTO.csproj", "{E98D8712-E4A6-464D-9E03-9B06F83109EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyJoy.API", "Backend\JourneyJoy.API\JourneyJoy.API.csproj", "{BF2A4A80-A0FB-4612-A22E-CAFA2EE31CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JourneyJoy.API", "Backend\JourneyJoy.API\JourneyJoy.API.csproj", "{BF2A4A80-A0FB-4612-A22E-CAFA2EE31CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{59907ECD-92B8-40F2-95B9-9F5FFACB5DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
