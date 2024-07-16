@@ -22,8 +22,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// For Cors 
+app.UseCors(options =>
+{
+    options
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowAnyOrigin();
+});
+
 app.UseHttpsRedirection();
 
+// For Authentication
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -4,7 +4,7 @@ using JourneyJoy.Entities;
 
 namespace JourneyJoy.DAL.Repositories.EFRepositories
 {
-    public class EFAccountRepository(AppDbContext context) : GenericUoWRepository<Account>(context), IAccountDAL
+    public class EFAccountRepository(AppDbContext context) : GenericRepository<Account>(context), IAccountDAL
     {
     }
 }

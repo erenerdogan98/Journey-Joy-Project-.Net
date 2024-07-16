@@ -2,7 +2,7 @@
 
 namespace JourneyJoy.DAL.Abstract
 {
-    public interface IAccountDAL : IGenericUoWDAL<Account>
+    public interface IAccountDAL : IGenericDAL<Account>
     {
     }
 }
