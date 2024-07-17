@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Error 404 - Page Not Found!</title>
+    <link rel="stylesheet" type="text/css" href="~/simple-404-template-master/assets/css/style.css" />
+    <link href="~/simple-404-template-master/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+        <img class="ops" src="~/simple-404-template-master/assets/images/404.svg" />
+        <br />
+        <h3>
+            Opppss! the page you are looking for could not be found.
+        </h3>
+        <br />
+        <a class="buton" asp-controller="Default" asp-action="Index">Back to Home</a>
+    </div>
+    <script>
+        // Redirect to the Error404 page
+        window.location.href = '@Url.Action("Error404", "ErrorPage")';
+    </script>
+</body>
+
+</html>

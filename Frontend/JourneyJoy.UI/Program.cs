@@ -1,7 +1,10 @@
-var builder = WebApplication.CreateBuilder(args);
+using JourneyJoy.UI.Core.Extensions;
 
+var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.ConfigureMyServicesHttpClient(configuration);
 
 var app = builder.Build();
 

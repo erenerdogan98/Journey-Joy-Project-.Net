@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
@@ -15,6 +14,12 @@
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue-comment.yml" />
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue.yml" />
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\issue-staler.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Serilog" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
