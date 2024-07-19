@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="zxx">
+
+@await Html.PartialAsync("~/Views/LayoutPartial/HeaderPartial.cshtml")
+<body>
+    <!--header-->
+    @await Html.PartialAsync("~/Views/LayoutPartial/NavbarPartial.cshtml")
+    @RenderBody()  @* It means where the pages to be run will be positioned depending on the relevant layout. *@
+
+    @await Html.PartialAsync("~/Views/LayoutPartial/FooterPartial.cshtml")
+
+    @await Html.PartialAsync("~/Views/LayoutPartial/ScriptsPartial.cshtml")
+
+</body>
+</html>

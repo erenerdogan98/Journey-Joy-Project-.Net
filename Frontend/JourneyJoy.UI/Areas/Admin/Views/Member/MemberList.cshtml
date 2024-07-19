@@ -1,0 +1,38 @@
+﻿@model IEnumerable<UserInfoResult>
+@{
+    ViewData["Title"] = "Members";
+    Layout = "~/Areas/Admin/Views/Layout/AdminLayout.cshtml";
+}
+
+<h1>Member List</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Name Surname</th>
+        <th>User Name</th>
+        <th>Mail Account</th>
+        <th>Comments</th>
+        <th>Tour History</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name @item.Surname</td>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                <td><a asp-area="Admin" asp-controller="Member" asp-action="CommentMember" asp-route-id="@item.Id" class="btn btn-outline-info">Comments</a></td>
+                <td><a asp-area="Admin" asp-controller="Member" asp-action="MemberReservations" asp-route-id="@item.Id" class="btn btn-outline-secondary">Tour History</a></td>
+                <td><a asp-area="Admin" asp-controller="Member" asp-action="DeleteMember" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a></td>
+                <td><a asp-area="Admin" asp-controller="Member" asp-action="EditMember" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a></td>
+            </tr>
+        }
+    }
+        <p>No data available</p>
+</table>
