@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ResultDestinationDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Member/Views/Layout/MemberLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Active Tour Desintaiotns</h4>
+                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content collapse show">
+                <div class="card-body">
+                    <p class="card-text">Accompanied by our expert guides, you can access the Destination list and Destination Prices that we offer at the most affordable prices, from the Balkans to Central Asia, from Europe to the beauties of Anatolia, from America to Mexico. </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>City</th>
+                                    <th>Duraiton(Day Night)</th>
+                                    <th>Capacity</th>
+                                    <th>Price</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.City</td>
+                                        <td>@item.Day @item.Night</td>
+                                        <td>@item.Capacity</td>
+                                        <td>$@item.Price</td>
+                                        <td><a href="/Destination/DestinationDetails/@item.Id" class="btn btn-outline-info">Details</a></td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>Our Active Tour Routes</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>City</th>
+        <th>Duraiton</th>
+        <th>Capacity</th>
+        <th>Price</th>
+        <th>Details</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.City</td>
+            <td>@item.Day</td>
+            <td>@item.Capacity</td>
+            <td>$@item.Price</td>
+            <td><a href="#" class="btn btn-outline-info">Details</a></td>
+        </tr>
+    }
+</table>
